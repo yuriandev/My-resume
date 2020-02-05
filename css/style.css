@@ -12,7 +12,7 @@ h1 {
     text-align: center;
 }
 header {
-    background-color: #fffdf9;    
+    background-color: #d6e5fa;    
 }
 .sub-title {
     font-size: 1.2rem;
@@ -47,5 +47,19 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }   
+    }
+    .name-logo {
+        text-align: left;
+    }  
+}
+
+/**** test ****/
+#intro, #portfolio, #skills, #why_me {
+    height: 100vh;
+    padding-top: 2rem;
+    background-color: #f1f1f6;
+}
+#header, #contacts {
+    height: 8vh;
+    background-color: #d6e5fa;
 }

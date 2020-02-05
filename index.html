@@ -13,22 +13,73 @@
     <title>My resume</title>
   </head>
   <body>
-    <header>
-      <div class="title">
+    <header id="header">
+      <section>
         <h1 class="name-logo">Yuri An</h1>
         <p class="sub-title">Junior front-end developer</p>
-      </div>
+      </section>
       <nav>
         <ul class="nav-list">
-          <li class="nav-list-item"><a href="#">Skills</a></li>
-          <li class="nav-list-item"><a href="#">Portfolio</a></li>
-          <li class="nav-list-item"><a href="#">Why me?</a></li>
-          <li class="nav-list-item"><a href="#">Contacts</a></li>
+          <li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-list-item"><a href="#skills">Skills</a></li>
+          <li class="nav-list-item"><a href="#Why_me">Why me?</a></li>
+          <li class="nav-list-item"><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
     </header>
 
-    <main></main>
-    <footer></footer>
+    <main>
+      <article id="intro">
+        <h1>Hello!</h1>
+        <p>I'm Yuri</p>
+        <p>And let me speak from my heart =)</p>
+        <figure>
+          <img
+            src="https://miro.medium.com/max/600/1*cYqd8OWTOQYgrdkI8sykxg.png"
+            alt="My photo"
+          />
+          <figcaption>Yeah, this is how I look like...</figcaption>
+        </figure>
+      </article>
+
+      <section id="portfolio">
+        <h1>My portfolio:</h1>
+        <div class="portfolio_container">
+          <div class="portfolio_item">1</div>
+          <div class="portfolio_item">2</div>
+          <div class="portfolio_item">3</div>
+          <div class="portfolio_item">4</div>
+          <div class="portfolio_item">5</div>
+          <div class="portfolio_item">6</div>
+          <div class="portfolio_item">7</div>
+          <div class="portfolio_item">8</div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h1>My skills:</h1>
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>Javascript</p>
+        <p>ES6</p>
+        <p>Git and GitHub</p>
+      </section>
+
+      <article id="why_me">
+        <h1>Why me?</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
+    </main>
+    <footer id="contacts">
+      <p>Contacts</p>
+    </footer>
   </body>
 </html>
