@@ -1,65 +1,156 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "Livvic", sans-serif;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Livvic", sans-serif;
+}
+#intro {
+  padding-top: 10rem;
+}
+#intro,
+#portfolio,
+#skills,
+#why_me {
+  min-height: 100vh;
+}
+#contacts {
+  min-height: 8vh;
 }
 h1 {
-    font-family: "Solway", serif;
-    font-weight: 500;
-    color: #10316b;
-    font-size: 2rem;
-    text-align: center;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  color: #10316b;
+  font-size: 2rem;
+  text-align: center;
 }
 header {
-    background-color: #d6e5fa;    
+  padding: 1rem 0;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
 }
-.sub-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #1792d2;    
-    text-align: center;
+figure {
+  max-width: 600px;
+  margin: 0 auto;
+}
+figcaption {
+  font-size: 0.7rem;
+  text-align: right;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/**** Header navigation ****/
+.section-name {
+  text-align: left;
+}
+.name-logo,
+.icon-menu {
+  color: #10316b;
 }
 .nav-list {
-    list-style: none;
-    text-align: center;    
+  list-style: none;
+  text-align: center;
+}
+.nav-list-item {
+  margin: 1rem;
 }
 .nav-list a {
-    text-decoration: none;
-    color: #707070;
-    font-weight: 500;
+  text-decoration: none;
+  color: rgb(42, 45, 53);
+  font-weight: 500;
 }
 .nav-list a:hover,
 .nav-list a:focus {
-    color: #1792d2;
-}
-@media (min-width: 380px) {
-    .nav-list {
-        display: flex;
-        justify-content: center;  
-    }
-    .nav-list-item {
-        margin: 0 1rem;
-    }
-}
-@media (min-width: 640px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .name-logo {
-        text-align: left;
-    }  
+  color: #0f1bc4;
 }
 
-/**** test ****/
-#intro, #portfolio, #skills, #why_me {
-    height: 100vh;
-    padding-top: 2rem;
-    background-color: #f1f1f6;
+/*** Mobile hamburger menu*/
+nav {
+  position: absolute;
+  display: none;
 }
-#header, #contacts {
-    height: 8vh;
-    background-color: #d6e5fa;
+
+.show-menu {
+  display: block;
+  background-color: #8ed4f7;
+  opacity: 0.9;
+  width: 50%;
+  top: 4.5rem;
+  left: 25%;
+  z-index: 100;
+  padding: 2rem;
+  color: black;
+  font-size: 1.5rem;
+}
+
+/**** Intro ****/
+.intro {
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(244, 246, 248);
+}
+.intro p {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: rgb(175, 132, 243);
+}
+
+.intro-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/**** Portfolio ****/
+.portfolio-item {
+  margin: 1rem auto;
+  width: 300px;
+  height: 300px;
+  background-color: lightblue;
+}
+
+/* media*/
+@media (min-width: 600px) {
+  header .container {
+    flex-direction: column;
+  }
+  nav {
+    position: static;
+    display: block;
+  }
+  .icon-menu {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-list-item {
+    margin: 0 1rem;
+  }
+  .nav-list a {
+    color: blue;
+  }
+}
+@media (min-width: 900px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .name-logo {
+    text-align: left;
+  }
 }
